@@ -1,0 +1,73 @@
+1- Take 4 numbers from console using while loop and print the average of all 4 numbers.
+
+n = 4
+avg = 0
+while(n):
+    n -= 1
+    num = int(input("Enter four number : "))
+    avg += num 
+print("Avg of four number is : ",avg/4)    
+
+2- Print below pattern using while loop.
+
+n = int(input("Enter number : "))
+for i in range(0,n,1):
+    for j in range(0,n-i,1):
+        if(j < i):
+            print(" ",end = "")
+            continue
+        print(j%2,end = "")
+    print("")    
+
+3-  Print below pattern using while loop.
+
+"""
+1 
+1 2 
+1 2 3 
+1 2 3 4 
+1 2 3 4 5
+"""
+n = int (input("Enter the number : "))
+i ,temp = 0, n
+while(temp > 0):
+    i += 1 
+    j = 1
+    while(j <= i):
+        print(j ," ",end = "")
+        j += 1
+    temp -= 1 
+    print("")
+
+4- Print multiplication table of 9,16,28 using while loop does not range function. 
+
+#4- Print multiplication table of 9,16,28 using while loop does not range function. 
+n = int(input("Enter the any number for multiplication : "))
+i = 1
+while(i <= 10):
+    print(n * i, " ",end = "")
+    i += 1
+
+#5- Write a program for Factorial program using while loop.
+
+n = int(input("Enter number for factorial : "))
+
+fac = 1
+while(n > 0):
+    fac *= n
+    n = n-1
+print("Factorial of number : ",fac)    
+
+#6- Write a program to take input from console and print the count of numbers (Example :   123456 , count is 6)
+
+n = int(input("Enetr the number : "))
+count = 0
+
+while(n > 0):
+    count += 1
+    n = int(n / 10)
+    
+print("Count of Number : ",count)    
+    
+
+

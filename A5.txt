@@ -1,0 +1,101 @@
+#1- find the Max of three numbers using functions.
+def maxNumber():
+    maxx = -7654345678
+    for i in range(0,3,1):
+        n = int(input("Enter the number : "))
+        maxx = max(n,maxx)
+    print("Maximum number : ",maxx)
+maxNumber()    
+
+#2- multiply all the numbers in a list example - (9,7,8,-2,3) using function.
+def multiNumber(list1):
+    multiply = 1
+    for i in list1:
+        multiply *= i
+    return multiply    
+list1 = [9,7,8,-2,3]
+print(multiNumber(list1))    
+
+#3- calculate the factorial of a number using function.
+
+def factorial(num):
+    multiply = 1
+    for i in range(1,num+1):
+        multiply *= i
+    return multiply    
+n = int(input("Enter the number : "))
+factorial(n)
+print(factorial(n))    
+
+
+#4- Print number of upper and lower letter in given string. Example (I am VSF Tech Student) , Upper Count-6 , Lower Count- 10
+def ULC(str1):
+    Upper = 0
+    Lower = 0
+    for i in range(0, len(str1),1):
+        if(ord(str1[i]) == ord(' ')):
+            continue
+        elif(ord(str1[i]) >= 97 and ord(str1[i]) <= 122):
+            Lower = Lower + 1
+            continue
+        else:
+            Upper = Upper + 1
+    print("Upper : ",Upper, "  ","Lower : ",Lower)        
+str1 = input("Enter the string : ")
+ULC(str1)
+
+
+#5- Program to take list as Input example - (1,1,2,2,3,3,4,5,6) and remove duplicate element and give output like (1,2,3,4,5,6)
+
+def RDE(li):
+    RD_List = [] #remove duplicate list
+    for i in range(0,len(li)):
+        indication = 0
+        for j in range(i+1,len(li)):
+            if(li[i] == li[j]):
+                indication = 1
+                break
+        if indication == 0:
+            RD_List.append(li[i])
+    return RD_List        
+li = [1,1,2,2,3,3,4,5,6,0]
+li = RDE(li)
+print(li)
+
+#6- check passed string is palindrome or not.  example (madam, wow, noon, rotator) 
+def Palin(str1):
+    i = 0
+    j = len(str1)-1
+    while i < j:
+        if(str1[i] != str1[j]):
+            return "false"
+        i = i + 1 
+        j = j - 1
+    return "True"    
+    
+str1 = input("Enter the String : ")
+print(Palin(str1))
+
+#7- print list of all the even numbers between in range 1 to 20.
+def even():
+    li = []
+    for i in range(1,21,1):
+        if i % 2 == 0:
+            li.append(i)
+    return li
+
+print(even())
+
+#8 - print largest item from a given list. Example [10,29,13,36,58,19], largest number is 58.
+def LargeNum(li):
+    large = -989927676
+    for i in li:
+        large = max(i,large)
+    return large
+n = int(input("Enter the total no of ele : "))
+li = []
+while n > 0:
+    num = int(input("Enter num : "))
+    li.append(num)s
+    n = n - 1
+print(LargeNum(li))

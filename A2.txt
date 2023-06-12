@@ -1,0 +1,51 @@
+1-  Write a program to take input from console and print the number is negative/positive.
+
+
+n = int(input("Enter the number : "))
+if(n < 0):
+    print("Negative number ")
+else:
+    print("positive Number")
+
+2-  Write a program to take input from console and print the number is even/odd.
+
+n = int(input("Enter the number : "))
+if(n % 2):
+    print("Odd")
+else:
+    print("Even")
+
+3-  Write the program to take input as character(a to z) and print the character is Vowels(a,e,i,u) or non-vowels character. 
+
+
+n = (input("Enter the number : "))
+if(n == 'a' or n == 'e' or n == 'i' or n == 'o' or n == 'u' or n == 'A' or n == 'E' or n == 'I' or n == 'O' or n == 'U'):
+    print("vowels")
+else:
+    print("non- vowels")
+
+4-Write a program to take 3 numbers as an input from console and print the largest number.
+maximum = -2147483648
+n = 3
+while(n):
+    n = n -1
+    num  = int(input("Enter the three numbers : "))
+    maximum = max(num,maximum)
+print("MAximum Number is : ",maximum) 
+
+5-Write a program to print the marks in grade.
+
+grade = int(input("Enter the Grade : "))
+
+if(grade < 25):
+    print("F")
+elif(grade >= 25 and grade < 45):
+    print("E")
+elif(grade >= 45 and grade < 50):
+    print("D")
+elif(grade >=50 and grade < 60):
+    print("C")
+elif(grade >= 60 and grade < 80):
+    print("B")
+else:
+    print("A")   
